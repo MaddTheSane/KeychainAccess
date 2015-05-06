@@ -1359,64 +1359,64 @@ extension CFError {
 }
 
 public enum Status : OSStatus {
-    case Success
-    case Unimplemented
-    case Param
-    case Allocate
-    case NotAvailable
-    case ReadOnly
-    case AuthFailed
-    case NoSuchKeychain
-    case InvalidKeychain
-    case DuplicateKeychain
-    case DuplicateCallback
-    case InvalidCallback
-    case DuplicateItem
-    case ItemNotFound
-    case BufferTooSmall
-    case DataTooLarge
-    case NoSuchAttr
-    case InvalidItemRef
-    case InvalidSearchRef
-    case NoSuchClass
-    case NoDefaultKeychain
-    case InteractionNotAllowed
-    case ReadOnlyAttr
-    case WrongSecVersion
-    case KeySizeNotAllowed
-    case NoStorageModule
-    case NoCertificateModule
-    case NoPolicyModule
-    case InteractionRequired
-    case DataNotAvailable
-    case DataNotModifiable
-    case CreateChainFailed
-    case InvalidPrefsDomain
-    case ACLNotSimple
-    case PolicyNotFound
-    case InvalidTrustSetting
-    case NoAccessForItem
-    case InvalidOwnerEdit
-    case TrustNotAvailable
-    case UnsupportedFormat
-    case UnknownFormat
-    case KeyIsSensitive
-    case MultiplePrivKeys
-    case PassphraseRequired
-    case InvalidPasswordRef
-    case InvalidTrustSettings
-    case NoTrustSettings
-    case Pkcs12VerifyFailure
-    case InvalidCertificate
-    case NotSigner
-    case PolicyDenied
-    case InvalidKey
-    case Decode
-    case Internal
-    case UnsupportedAlgorithm
-    case UnsupportedOperation
-    case UnsupportedPadding
-    case ItemInvalidKey
+    case Success			= 0
+    case Unimplemented		= -4
+    case Param				= -50
+    case Allocate			= -108
+    case NotAvailable		= -25291
+    case ReadOnly			= -25292
+    case AuthFailed			= -25293
+    case NoSuchKeychain		= -25294
+    case InvalidKeychain	= -25295
+    case DuplicateKeychain	= -25296
+    case DuplicateCallback	= -25297
+    case InvalidCallback	= -25298
+    case DuplicateItem		= -25299
+    case ItemNotFound		= -25300
+    case BufferTooSmall		= -25301
+    case DataTooLarge		= -25302
+    case NoSuchAttr			= -25303
+    case InvalidItemRef		= -25304
+    case InvalidSearchRef	= -25305
+    case NoSuchClass		= -25306
+    case NoDefaultKeychain	= -25307
+    case InteractionNotAllowed = -25308
+    case ReadOnlyAttr		= -25309
+    case WrongSecVersion	= -25310
+    case KeySizeNotAllowed	= -25311
+    case NoStorageModule	= -25312
+    case NoCertificateModule = -25313
+    case NoPolicyModule		= -25314
+    case InteractionRequired = -25315
+    case DataNotAvailable	= -25316
+    case DataNotModifiable 	= -25317
+    case CreateChainFailed	= -25318
+    case InvalidPrefsDomain	= -25319
+    case ACLNotSimple		= -25240
+    case PolicyNotFound		= -25241
+    case InvalidTrustSetting = -25242
+    case NoAccessForItem	= -25243
+    case InvalidOwnerEdit 	= -25244
+    case TrustNotAvailable	= -25245
+    case UnsupportedFormat	= -25256
+    case UnknownFormat		= -25257
+    case KeyIsSensitive		= -25258
+    case MultiplePrivKeys 	= -25259
+    case PassphraseRequired	= -25260
+    case InvalidPasswordRef	= -25261
+    case InvalidTrustSettings = -25262
+    case NoTrustSettings	= -25263
+    case Pkcs12VerifyFailure = -25264
+    case InvalidCertificate	= -25265
+    case NotSigner			= -25267
+    case PolicyDenied		= -25270
+    case InvalidKey			= -25274
+    case Decode				= -25275
+    case Internal			= -25276
+    case UnsupportedAlgorithm = -25268
+    case UnsupportedOperation = -25271
+    case UnsupportedPadding	= -25273
+    case ItemInvalidKey		= -34000
     case ItemInvalidKeyType
     case ItemInvalidValue
     case ItemClassMissing
@@ -1735,7 +1735,7 @@ public enum Status : OSStatus {
     case InvalidIndexInfo
     case InvalidNewOwner
     case InvalidModifyMode
-    case UnexpectedError
+    case UnexpectedError	= -99999
 }
 
 extension Status : RawRepresentable, Printable {
