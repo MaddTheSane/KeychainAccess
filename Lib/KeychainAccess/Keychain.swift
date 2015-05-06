@@ -1417,16 +1417,16 @@ public enum Status : OSStatus {
     case UnsupportedOperation = -25271
     case UnsupportedPadding	= -25273
     case ItemInvalidKey		= -34000
-    case ItemInvalidKeyType
-    case ItemInvalidValue
-    case ItemClassMissing
-    case ItemMatchUnsupported
-    case UseItemListUnsupported
-    case UseKeychainUnsupported
-    case UseKeychainListUnsupported
-    case ReturnDataUnsupported
-    case ReturnAttributesUnsupported
-    case ReturnRefUnsupported
+    case ItemInvalidKeyType	= -34001
+    case ItemInvalidValue	= -34002
+    case ItemClassMissing	= -34003
+    case ItemMatchUnsupported = -34004
+    case UseItemListUnsupported = -34005
+    case UseKeychainUnsupported = -34006
+    case UseKeychainListUnsupported = -34007
+    case ReturnDataUnsupported = -34008
+    case ReturnAttributesUnsupported = -34009
+    case ReturnRefUnsupported = -34010
     case ReturnPersitentRefUnsupported
     case ValueRefUnsupported
     case ValuePersistentRefUnsupported
